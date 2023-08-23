@@ -1,4 +1,4 @@
-Spotify Web App using React
+# Spotify Web App using React #
 
 This repository contains a Spotify Web App built using React. This app allows users to search for songs, artists, and albums on Spotify and play the selected tracks.
 
