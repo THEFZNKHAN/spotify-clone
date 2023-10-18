@@ -1,0 +1,75 @@
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 8vh;
+    background-color: rgb(23, 30, 40);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-div .leftSide {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-div .leftSide .icons,
+.navbar-div .rightSide .icons,
+.navbar-div .rightSide .id-icons {
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.navbar-div .leftSide .icons:hover,
+.navbar-div .rightSide .icons:hover,
+.navbar-div .rightSide .id-icons:hover {
+    background-color: white;
+    color: rgb(18, 18, 18);
+}
+
+.navbar-div .rightSide {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar-div .rightSide .ep-btn {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: white;
+    color: rgb(22 24 29);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.navbar-div .rightSide .ep-btn:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar-div .rightSide .download-btn {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    padding: 1px 10px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar-div .rightSide .download-btn:hover {
+    background-color: white;
+    color: rgb(18, 18, 18);
+    font-size: 1.1rem;
+}
