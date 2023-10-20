@@ -136,6 +136,11 @@
 .sidebar-div .bottom .bottom-body .bb-element {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-div .bottom .bottom-body .bb-element:hover {
+    background-color: rgb(26, 26, 26);
 }
 
 .sidebar-div .bottom .bottom-body .bb-element img {
@@ -146,14 +151,14 @@
     margin-right: 18px;
 }
 
-.sidebar-div .bottom .bottom-body .bb-element .pl-name h3 { 
+.sidebar-div .bottom .bottom-body .bb-element .pl-name h3 {
     font-size: 20px;
     margin-bottom: 2px;
     font-weight: 400;
     color: white;
 }
 
-.sidebar-div .bottom .bottom-body .bb-element .pl-name p { 
+.sidebar-div .bottom .bottom-body .bb-element .pl-name p {
     font-size: 13px;
     margin-top: 2px;
     color: rgb(141, 141, 141);
