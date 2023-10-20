@@ -1,12 +1,16 @@
 .sidebar-div {
     display: flex;
     flex-direction: column;
-    height: 15vh;
+    height: 13vh;
     width: 25%;
     background-color: rgb(18, 18, 18);
     color: rgb(168, 168, 168);
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-div .top {
+    padding: 10px;
 }
 
 .home-btn,
@@ -37,10 +41,11 @@
 }
 
 .sidebar-div .middle {
-    margin-top: 35px;
+    padding: 5px 10px;
     background-color: rgb(18, 18, 18);
     color: rgb(168, 168, 168);
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .sidebar-div .middle .lib-head {
@@ -49,13 +54,13 @@
     padding: 10px;
 }
 
-.sidebar-div .middle .lib-head .lib-side{
+.sidebar-div .middle .lib-head .lib-side {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.sidebar-div .middle .lib-head .lib-side:hover{
+.sidebar-div .middle .lib-head .lib-side:hover {
     color: white;
 }
 
@@ -72,7 +77,6 @@
 .sidebar-div .middle .lib-head .lib-rs .app-icon,
 .sidebar-div .middle .lib-head .lib-rs .arrow-icon {
     font-size: 1.5rem;
-    padding-right: 5px;
     margin: 2px 5px;
     cursor: pointer;
 }
@@ -80,16 +84,18 @@
 .sidebar-div .middle .lib-head .lib-rs .app-icon:hover,
 .sidebar-div .middle .lib-head .lib-rs .arrow-icon:hover {
     color: white;
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
 }
 
 .sidebar-div .middle .lib-keyword {
-    margin-top: 10px;
+    margin-top: 15px;
     padding-left: 10px;
 }
 
 .sidebar-div .middle .lib-keyword span {
-    font-size: 15px;
-    background-color: rgb(58, 58, 58);
+    font-size: 14px;
+    background-color: rgb(42, 42, 42);
     color: white;
     margin-right: 10px;
     padding: 6px 10px;
@@ -97,3 +103,58 @@
     cursor: pointer;
 }
 
+.sidebar-div .bottom {
+    padding: 15px 10px;
+    background-color: rgb(18, 18, 18);
+    color: rgb(168, 168, 168);
+}
+
+.sidebar-div .bottom .bottom-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.sidebar-div .bottom .bottom-head .search-icon,
+.sidebar-div .bottom .bottom-head .list-icon {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.sidebar-div .bottom .bottom-head .search-icon:hover,
+.sidebar-div .bottom .bottom-head .list-icon:hover {
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border-radius: 50%;
+}
+
+.sidebar-div .bottom .bottom-body {
+    overflow-y: auto;
+    padding-top: 5px;
+}
+
+.sidebar-div .bottom .bottom-body .bb-element {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-div .bottom .bottom-body .bb-element img {
+    height: 5vh;
+    width: 3vw;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+.sidebar-div .bottom .bottom-body .bb-element .pl-name h3 { 
+    font-size: 20px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+.sidebar-div .bottom .bottom-body .bb-element .pl-name p { 
+    font-size: 13px;
+    margin-top: 2px;
+    color: rgb(141, 141, 141);
+}
