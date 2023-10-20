@@ -4,8 +4,9 @@
     height: 15vh;
     width: 25%;
     background-color: rgb(18, 18, 18);
-    color: #fff;
+    color: rgb(168, 168, 168);
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .home-btn,
@@ -20,17 +21,79 @@
 
 .home-btn:hover,
 .search-btn:hover {
-    background-color: #282828;
+    color: white;
 }
 
 .home-btn span,
 .search-btn span {
-    font-size: 1.5rem;
-    font-weight: 600; 
+    font-size: 1.2rem;
+    font-weight: 600;
     margin: 10px 20px;
 }
 
 .home-btn .home-icon,
 .search-btn .search-icon {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
+
+.sidebar-div .middle {
+    margin-top: 35px;
+    background-color: rgb(18, 18, 18);
+    color: rgb(168, 168, 168);
+    border-radius: 10px;
+}
+
+.sidebar-div .middle .lib-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sidebar-div .middle .lib-head .lib-side{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-div .middle .lib-head .lib-side:hover{
+    color: white;
+}
+
+.sidebar-div .middle .lib-head .lib-side .music-icon {
+    font-size: 1.7rem;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.sidebar-div .middle .lib-head .lib-side span {
+    font-size: 1.1rem;
+}
+
+.sidebar-div .middle .lib-head .lib-rs .app-icon,
+.sidebar-div .middle .lib-head .lib-rs .arrow-icon {
+    font-size: 1.5rem;
+    padding-right: 5px;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.sidebar-div .middle .lib-head .lib-rs .app-icon:hover,
+.sidebar-div .middle .lib-head .lib-rs .arrow-icon:hover {
+    color: white;
+}
+
+.sidebar-div .middle .lib-keyword {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.sidebar-div .middle .lib-keyword span {
+    font-size: 15px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
