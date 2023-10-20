@@ -1,0 +1,40 @@
+.sidebar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 20%;
+    background-color: rgb(23, 30, 40);
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+
+.home-btn,
+.search-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.home-btn:hover,
+.search-btn:hover {
+    background-color: #282828;
+}
+
+.home-btn span,
+.search-btn span {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 10px 20px;
+}
+
+.home-btn .home-icon,
+.search-btn .search-icon {
+    font-size: 2rem;
+}

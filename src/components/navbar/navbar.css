@@ -6,6 +6,9 @@
     height: 8vh;
     background-color: rgb(23, 30, 40);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 5px;
+    border-radius: 10px;
 }
 
 .navbar-div .leftSide {
@@ -23,6 +26,7 @@
     border-radius: 50%;
     padding: 5px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .navbar-div .leftSide .icons:hover,
@@ -47,12 +51,12 @@
     color: rgb(22 24 29);
     padding: 5px 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .navbar-div .rightSide .ep-btn:hover {
-    background-color: whitesmoke;
-    color: black;
     font-size: 1.2rem;
+    transition: 0.1s;
 }
 
 .navbar-div .rightSide .download-btn {
@@ -66,10 +70,12 @@
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .navbar-div .rightSide .download-btn:hover {
     background-color: white;
     color: rgb(18, 18, 18);
     font-size: 1.1rem;
+    transition: 0.1s;
 }
