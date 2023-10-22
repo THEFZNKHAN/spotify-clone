@@ -1,0 +1,36 @@
+.songBar-div {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.song-div .song-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.songBar-div .song-info .song-img img {
+    height: 40px;
+}
+
+.songBar-div .song-info .song-info-text h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+.songBar-div .song-info .song-info-text p {
+    font-size: 12px;
+    margin-top: 2px;
+    color: rgb(141, 141, 141);
+}
