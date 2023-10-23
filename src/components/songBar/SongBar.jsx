@@ -17,7 +17,9 @@ const SongBar = () => {
                     <h4>My Head & My Heart</h4>
                     <p>Ava Max</p>
                 </div>
-                <FavoriteBorderIcon className="fav-icon" />
+                <div className="icon">
+                    <FavoriteBorderIcon className="fav-icon" />
+                </div>
             </div>
         </div>
     );
