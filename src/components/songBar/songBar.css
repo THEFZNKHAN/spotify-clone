@@ -51,7 +51,6 @@
     color: rgb(141, 141, 141);
 }
 
-
 .songBar-div .right-side {
     display: flex;
     flex-direction: row;
@@ -61,6 +60,7 @@
 
 .songBar-div .right-side .icon {
     margin: 5px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: rgb(141, 141, 141);
     cursor: pointer;
 }
