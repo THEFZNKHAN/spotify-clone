@@ -11,6 +11,7 @@
     bottom: 0;
     width: 100%;
     z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .songBar-div .song-info {
@@ -20,27 +21,46 @@
 }
 
 .songBar-div .song-info .song-img img {
-    height: 40px;
-    margin-right: 10px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 3px;
+}
+
+.songBar-div .song-info .song-info-text {
+    margin: 0 15px;
 }
 
 .songBar-div .song-info .song-info-text h4 {
-    font-size: 15px;
-    margin-bottom: 2px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 200;
     color: white;
-    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 
 .songBar-div .song-info .song-info-text p {
     font-size: 12px;
-    margin-top: 2px;
     color: rgb(141, 141, 141);
+    margin-top: 2px;
 }
 
 .songBar-div .song-info .icon .fav-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 10px;
     cursor: pointer;
-    color: white;
+    color: rgb(141, 141, 141);
+}
+
+
+.songBar-div .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.songBar-div .right-side .icon {
+    margin: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
