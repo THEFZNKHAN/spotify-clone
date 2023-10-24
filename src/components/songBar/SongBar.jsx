@@ -29,12 +29,12 @@ const SongBar = () => {
             </div>
 
             <div className="right-side">
-                <SlideshowIcon className="icon"/>
-                <LyricsIcon className="icon"/>
-                <QueueMusicIcon className="icon"/>
-                <SpeakerGroupIcon className="icon"/>
-                <VolumeUpIcon className="icon"/>
-                <PictureInPictureAltIcon className="icon"/>
+                <SlideshowIcon className="icon" />
+                <LyricsIcon className="icon" />
+                <QueueMusicIcon className="icon" />
+                <SpeakerGroupIcon className="icon" />
+                <VolumeUpIcon className="icon" />
+                <PictureInPictureAltIcon className="icon" />
             </div>
         </div>
     );
