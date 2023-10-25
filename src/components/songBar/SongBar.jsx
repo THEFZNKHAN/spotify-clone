@@ -1,5 +1,11 @@
 import React from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
+import SkipNextIcon from "@mui/icons-material/SkipNext";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+// import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
+import ShuffleIcon from "@mui/icons-material/Shuffle";
+import RepeatOneIcon from "@mui/icons-material/RepeatOne";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
 import LyricsIcon from "@mui/icons-material/Lyrics";
 import QueueMusicIcon from "@mui/icons-material/QueueMusic";
@@ -26,6 +32,14 @@ const SongBar = () => {
                 <div className="icon">
                     <FavoriteBorderIcon className="fav-icon" />
                 </div>
+            </div>
+
+            <div className="center">
+                <ShuffleIcon className="shuffle-icon icon" />
+                <SkipPreviousIcon className="prev-icon icon" />
+                <PlayCircleIcon className="play-icon icon" />
+                <SkipNextIcon className="next-icon icon" />
+                <RepeatOneIcon className="repeat-icon icon" />
             </div>
 
             <div className="right-side">
