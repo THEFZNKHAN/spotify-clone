@@ -97,8 +97,12 @@
 }
 
 .songBar-div .right-side .icon {
-    margin: 5px;
+    margin: 7px;
     font-size: 1.3rem;
     color: rgb(141, 141, 141);
     cursor: pointer;
+}
+
+.songBar-div .right-side .icon:hover {
+    color: rgb(255, 255, 255);
 }
