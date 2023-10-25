@@ -51,6 +51,44 @@
     color: rgb(141, 141, 141);
 }
 
+.songBar-div .song-info .icon .fav-icon:hover {
+    color: rgb(255, 255, 255);
+}
+
+.songBar-div .center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.songBar-div .center .icon {
+    margin: 5px;
+    font-size: 1.5rem;
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+.songBar-div .center .icon:hover {
+    color: rgb(255, 255, 255);
+}
+
+.songBar-div .center .play-icon {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    color: white;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+}
+
+.songBar-div .center .prev-icon,
+.songBar-div .center .next-icon {
+    font-size: 2.2rem;
+    margin-right: 10px;
+    color: rgb(188, 188, 188);
+}
+
 .songBar-div .right-side {
     display: flex;
     flex-direction: row;
