@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-// import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
+import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
 import RepeatOneIcon from "@mui/icons-material/RepeatOne";
 import SlideshowIcon from "@mui/icons-material/Slideshow";
@@ -16,6 +16,12 @@ import PictureInPictureAltIcon from "@mui/icons-material/PictureInPictureAlt";
 import "./songBar.css";
 
 const SongBar = () => {
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const togglePlayPause = () => {
+        setIsPlaying(!isPlaying);
+    };
+
     return (
         <div className="songBar-div">
             <div className="song-info">
@@ -26,7 +32,7 @@ const SongBar = () => {
                     />
                 </div>
                 <div className="song-info-text">
-                    <h4>My Head & My Heart</h4>
+                    <h4>My Head & My Heart</h4> 
                     <p>Ava Max</p>
                 </div>
                 <div className="icon">
@@ -37,7 +43,17 @@ const SongBar = () => {
             <div className="center">
                 <ShuffleIcon className="shuffle-icon icon" />
                 <SkipPreviousIcon className="prev-icon icon" />
-                <PlayCircleIcon className="play-icon icon" />
+                {isPlaying ? (
+                    <PauseCircleFilledIcon
+                        className="pause-icon icon"
+                        onClick={togglePlayPause}
+                    />
+                ) : (
+                    <PlayCircleIcon
+                        className="play-icon icon"
+                        onClick={togglePlayPause}
+                    />
+                )}
                 <SkipNextIcon className="next-icon icon" />
                 <RepeatOneIcon className="repeat-icon icon" />
             </div>
