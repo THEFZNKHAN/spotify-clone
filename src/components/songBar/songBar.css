@@ -74,12 +74,12 @@
     color: rgb(255, 255, 255);
 }
 
-.songBar-div .center .play-icon {
+.songBar-div .center .play-icon,
+.songBar-div .center .pause-icon {
     font-size: 2.5rem;
     margin-right: 10px;
     color: white;
     border-radius: 50%;
-    transition: box-shadow 0.3s;
 }
 
 .songBar-div .center .prev-icon,
