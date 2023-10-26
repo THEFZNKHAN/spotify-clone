@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate,
+} from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -15,6 +20,7 @@ function App() {
                 <Navbar className="navbar" />
             </div>
             <Routes>
+                <Route path="/spotify-clone" element={<Navigate to="/" />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/search" element={<Search />} />
             </Routes>
