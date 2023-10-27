@@ -3,6 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.App {
+.nav {
     display: flex;
+}
+
+.pages {
+    padding-top: 22px;
+    padding-left: 237px;
 }
