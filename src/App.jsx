@@ -15,15 +15,20 @@ import SongBar from "./components/songBar/SongBar";
 function App() {
     return (
         <Router>
-            <div className="App">
+            <div className="nav">
                 <Sidebar className="sidebar" />
                 <Navbar className="navbar" />
             </div>
-            <Routes>
-                <Route path="/spotify-clone" element={<Navigate to="/" />} />
-                <Route path="/" element={<Home />} />
-                <Route path="/search" element={<Search />} />
-            </Routes>
+            <div className="pages">
+                <Routes>
+                    <Route
+                        path="/spotify-clone"
+                        element={<Navigate to="/" />}
+                    />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/search" element={<Search />} />
+                </Routes>
+            </div>
             <SongBar className="songBar" />
         </Router>
     );
