@@ -16,8 +16,8 @@ function App() {
     return (
         <Router>
             <div className="nav">
+                {/* <Navbar className="navbar" /> */}
                 <Sidebar className="sidebar" />
-                <Navbar className="navbar" />
             </div>
             <div className="pages">
                 <Routes>
