@@ -61,12 +61,38 @@
     background: rgb(18, 18, 18);
 }
 
+.home-div .div2 .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-div .div2 .heading h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+.home-div .div2 .heading h4:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .home-div .div2 .heading h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 70px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.home-div .div2 .heading h2:hover {
+    text-decoration: underline;
 }
 
 .home-div .div2 .elements {
