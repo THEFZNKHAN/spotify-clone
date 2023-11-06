@@ -60,6 +60,7 @@ const Home = () => {
             <div className="div2">
                 <div className="heading">
                     <h2>Jump back in</h2>
+                    <h4>Show all</h4>
                 </div>
                 <div className="elements">
                     <div className="ele">
