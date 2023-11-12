@@ -32,7 +32,7 @@ const SongBar = () => {
                     />
                 </div>
                 <div className="song-info-text">
-                    <h4>My Head & My Heart</h4> 
+                    <h4>My Head & My Heart</h4>
                     <p>Ava Max</p>
                 </div>
                 <div className="icon">

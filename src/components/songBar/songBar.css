@@ -23,6 +23,7 @@
     height: 45px;
     margin-left: 0;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .songBar-div .song-info .song-info-text {
@@ -35,12 +36,22 @@
     color: white;
     margin-top: 10px;
     margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.songBar-div .song-info .song-info-text h4:hover {
+    text-decoration: underline;
 }
 
 .songBar-div .song-info .song-info-text p {
     font-size: 12px;
     color: rgb(141, 141, 141);
     margin-top: 2px;
+    cursor: pointer;
+}
+
+.songBar-div .song-info .song-info-text p:hover {
+    text-decoration: underline;
 }
 
 .songBar-div .song-info .icon .fav-icon {
