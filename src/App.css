@@ -2,13 +2,3 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.nav {
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
-}
-
-.pages {
-    padding-top: 22px;
-    padding-left: 237px;
-}
