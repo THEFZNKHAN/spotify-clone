@@ -40,9 +40,14 @@
     align-items: center;
     width: 320px;
     height: 60px;
-    background: rgb(111, 74, 69);
+    background: rgb(53, 43, 43);
     border-radius: 7px;
     margin: 5px;
+    cursor: pointer;
+}
+
+.home-div .div1 .song-elements .song-ele:hover {
+    background-color: rgb(89, 68, 65);
 }
 
 .home-div .div1 .song-elements .song-ele img {
@@ -111,7 +116,8 @@
     margin: 5px;
     margin-right: 20px;
     padding: 5px;
-    background: rgb(27, 26, 26);
+    background-color: rgb(24 24 24);
+    cursor: pointer;
 }
 
 .home-div .div2 .elements .ele:hover {
