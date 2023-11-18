@@ -96,6 +96,15 @@ const Home = () => {
                         <h3>Release Radar</h3>
                         <h4>Playlist</h4>
                     </div>
+                    <div className="ele">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
+                            alt=""
+                            className="img"
+                        />
+                        <h3>Girl in Red</h3>
+                        <h4>Artist</h4>
+                    </div>
                 </div>
             </div>
 
@@ -137,6 +146,15 @@ const Home = () => {
                         />
                         <h3>Release Radar</h3>
                         <h4>Playlist</h4>
+                    </div>
+                    <div className="ele">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
+                            alt=""
+                            className="img"
+                        />
+                        <h3>Girl in Red</h3>
+                        <h4>Artist</h4>
                     </div>
                 </div>
             </div>
