@@ -9,6 +9,9 @@
     width: 97%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
 }
 
 .navbar-div .leftSide {
