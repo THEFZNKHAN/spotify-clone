@@ -1,7 +1,7 @@
 .sidebar-div {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 89vh;
     width: 25%;
     color: rgb(168, 168, 168);
     position: fixed;
