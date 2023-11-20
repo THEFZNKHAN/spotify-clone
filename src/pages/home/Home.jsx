@@ -1,33 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./home.css";
 import Navbar from "../../components/navbar/Navbar";
 
 const Home = () => {
-    const [hideDiv1, setHideDiv1] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const div1 = document.querySelector(".div1");
-
-            if (div1 && scrollY > div1.offsetTop) {
-                setHideDiv1(true);
-            } else {
-                setHideDiv1(false);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     return (
         <div className="home-div">
             <Navbar />
-            <div className={`div1 ${hideDiv1 ? "hidden" : ""}`}>
+            <div className="div1">
                 <div className="heading">
                     <h2>Good morning</h2>
                 </div>
