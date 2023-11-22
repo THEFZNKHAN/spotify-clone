@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
@@ -9,14 +11,24 @@ import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import "./sidebar.css";
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const goToHome = () => {
+        navigate("/spotify-clone");
+    };
+
+    const goToSearch = () => {
+        navigate("/spotify-clone/search");
+    };
+
     return (
         <div className="sidebar-div">
             <div className="top">
-                <div className="home-btn">
+                <div className="home-btn" onClick={goToHome}>
                     <HomeIcon className="home-icon" />
                     <span>Home</span>
                 </div>
-                <div className="search-btn">
+                <div className="search-btn" onClick={goToSearch}>
                     <SearchIcon className="search-icon" />
                     <span>Search</span>
                 </div>

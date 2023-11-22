@@ -16,7 +16,7 @@ function App() {
             <Sidebar className="sidebar" />
             <Routes>
                 <Route path="/spotify-clone" element={<Home />} className="home"/>
-                <Route path="/search" element={<Search />} />
+                <Route path="/spotify-clone/search" element={<Search />} />
             </Routes>
             <SongBar className="songBar" />
         </Router>
