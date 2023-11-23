@@ -8,6 +8,10 @@
     top: 10px;
 }
 
+.active {
+    color: white;
+}
+
 .middle,
 .top {
     position: sticky;

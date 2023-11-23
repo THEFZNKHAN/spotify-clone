@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import HomeIcon from "@mui/icons-material/Home";
@@ -12,23 +12,32 @@ import "./sidebar.css";
 
 const Sidebar = () => {
     const navigate = useNavigate();
+    const [isActive, setIsActive] = useState(true);
 
     const goToHome = () => {
         navigate("/spotify-clone");
+        setIsActive(true);
     };
 
     const goToSearch = () => {
         navigate("/spotify-clone/search");
+        setIsActive(false);
     };
 
     return (
         <div className="sidebar-div">
             <div className="top">
-                <div className="home-btn" onClick={goToHome}>
+                <div
+                    className={`home-btn ${isActive ? "active" : ""}`}
+                    onClick={goToHome}
+                >
                     <HomeIcon className="home-icon" />
                     <span>Home</span>
                 </div>
-                <div className="search-btn" onClick={goToSearch}>
+                <div
+                    className={`search-btn ${!isActive ? "active" : ""}`}
+                    onClick={goToSearch}
+                >
                     <SearchIcon className="search-icon" />
                     <span>Search</span>
                 </div>
