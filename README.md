@@ -1,6 +1,6 @@
 # Spotify Web App using React #
 
-![image](https://github.com/THEFZNKHAN/spotify-clone/assets/124388165/6c1521ce-9c03-4378-a6ea-183ddc3dc8ee)
+![image](https://github.com/THEFZNKHAN/spotify-clone/assets/124388165/c10be0ca-efb8-4615-b558-8888edce5353)
 
 This repository contains a Spotify Web App built using React. This app allows users to search for songs, artists, and albums on Spotify and play the selected tracks.
 
