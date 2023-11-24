@@ -20,7 +20,7 @@
 }
 
 .songBar-div .song-info .song-img img {
-    height: 45px;
+    height: 60px;
     margin-left: 0;
     border-radius: 3px;
     cursor: pointer;
@@ -67,36 +67,58 @@
 
 .songBar-div .center {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 10px;
 }
 
-.songBar-div .center .icon {
-    margin: 5px;
-    font-size: 1.5rem;
+.songBar-div .center .op {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.songBar-div .center .op .icon {
+    margin: 0px 5px;
+    font-size: 1.3rem;
     color: rgb(141, 141, 141);
     cursor: pointer;
 }
 
-.songBar-div .center .icon:hover {
+.songBar-div .center .op .icon:hover {
     color: rgb(255, 255, 255);
 }
 
-.songBar-div .center .play-icon,
-.songBar-div .center .pause-icon {
-    font-size: 2.5rem;
-    margin-right: 10px;
-    color: white;
-    border-radius: 50%;
-}
-
-.songBar-div .center .prev-icon,
-.songBar-div .center .next-icon {
+.songBar-div .center .op .play-icon,
+.songBar-div .center .op .pause-icon {
     font-size: 2.2rem;
     margin-right: 10px;
+    color: white;
+}
+
+.songBar-div .center .op .prev-icon,
+.songBar-div .center .op .next-icon {
+    font-size: 1.7rem;
+    margin-right: 10px;
     color: rgb(188, 188, 188);
+}
+
+.songBar-div .center .slide-div {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.songBar-div .center .slide-div .slider {
+    height: 0.5vh;
+    width: 500px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.songBar-div .center .slide-div p {
+    font-size: 13px;
+    color: rgb(141, 141, 141);
 }
 
 .songBar-div .right-side {
@@ -111,6 +133,12 @@
     font-size: 1.3rem;
     color: rgb(141, 141, 141);
     cursor: pointer;
+}
+
+.songBar-div .right-side .volume {
+    height: 0.5vh;
+    width: 100px;
+    margin-left: 0;
 }
 
 .songBar-div .right-side .icon:hover {

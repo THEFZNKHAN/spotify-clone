@@ -41,21 +41,28 @@ const SongBar = () => {
             </div>
 
             <div className="center">
-                <ShuffleIcon className="shuffle-icon icon" />
-                <SkipPreviousIcon className="prev-icon icon" />
-                {isPlaying ? (
-                    <PauseCircleFilledIcon
-                        className="pause-icon icon"
-                        onClick={togglePlayPause}
-                    />
-                ) : (
-                    <PlayCircleIcon
-                        className="play-icon icon"
-                        onClick={togglePlayPause}
-                    />
-                )}
-                <SkipNextIcon className="next-icon icon" />
-                <RepeatOneIcon className="repeat-icon icon" />
+                <div className="op">
+                    <ShuffleIcon className="shuffle-icon icon" />
+                    <SkipPreviousIcon className="prev-icon icon" />
+                    {isPlaying ? (
+                        <PauseCircleFilledIcon
+                            className="pause-icon icon"
+                            onClick={togglePlayPause}
+                        />
+                    ) : (
+                        <PlayCircleIcon
+                            className="play-icon icon"
+                            onClick={togglePlayPause}
+                        />
+                    )}
+                    <SkipNextIcon className="next-icon icon" />
+                    <RepeatOneIcon className="repeat-icon icon" />
+                </div>
+                <div className="slide-div">
+                    <p>0:00</p>
+                    <input type="range" className="slider" />
+                    <p>5:00</p>
+                </div>
             </div>
 
             <div className="right-side">
@@ -64,6 +71,7 @@ const SongBar = () => {
                 <QueueMusicIcon className="icon" />
                 <SpeakerGroupIcon className="icon" />
                 <VolumeUpIcon className="icon" />
+                <input type="range" className="volume" />
                 <PictureInPictureAltIcon className="icon" />
             </div>
         </div>
