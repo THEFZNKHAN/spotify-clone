@@ -125,18 +125,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
 .songBar-div .right-side .icon {
-    margin: 7px;
+    margin: 6px;
     font-size: 1.3rem;
     color: rgb(141, 141, 141);
     cursor: pointer;
 }
 
 .songBar-div .right-side .volume {
-    height: 0.5vh;
+    height: 0.3vh;
     width: 100px;
     margin-left: 0;
 }
