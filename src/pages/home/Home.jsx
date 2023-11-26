@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="div2">
+            <div className="div2 div3">
                 <div className="heading">
                     <h2>Only for you</h2>
                     <h4>Show all</h4>
