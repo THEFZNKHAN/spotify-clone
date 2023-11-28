@@ -2,15 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     padding: 0 1rem;
     height: 8vh;
     background-color: rgb(52, 3, 3);
-    width: 97%;
+    width: 70vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    position: sticky;
-    top: 10px;
-    z-index: 1;
+    top: 1vh;
 }
 
 .navbar-div .leftSide {
