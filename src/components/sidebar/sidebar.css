@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 89vh;
-    width: 25%;
+    width: 25vw;
     color: rgb(168, 168, 168);
     position: fixed;
     top: 10px;
@@ -157,8 +157,8 @@
 }
 
 .sidebar-div .bottom .bottom-body .bb-element img {
-    height: 5vh;
-    width: 3vw;
+    height: 47px;
+    width: 47px;
     border-radius: 4px;
     margin-left: 10px;
     margin-right: 18px;
@@ -169,6 +169,7 @@
     margin-bottom: 2px;
     font-weight: 400;
     color: white;
+    margin-top: 10px;
 }
 
 .sidebar-div .bottom .bottom-body .bb-element .pl-name p {
