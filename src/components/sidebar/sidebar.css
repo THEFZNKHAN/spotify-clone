@@ -2,10 +2,14 @@
     display: flex;
     flex-direction: column;
     height: 89vh;
-    width: 25vw;
+    width: 26vw;
     color: rgb(168, 168, 168);
     position: fixed;
     top: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .active {
@@ -150,6 +154,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .sidebar-div .bottom .bottom-body .bb-element:hover {
