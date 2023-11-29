@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="rightSide">
                 <span className="ep-btn">Explore Premium</span>
                 <div className="download-btn">
-                    <Downloading className="icons" />
+                    <Downloading />
                     <span>Install App</span>
                 </div>
                 <NotificationsNoneOutlinedIcon className="icons" />
