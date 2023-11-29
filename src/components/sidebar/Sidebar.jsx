@@ -14,6 +14,49 @@ const Sidebar = () => {
     const navigate = useNavigate();
     const [isActive, setIsActive] = useState(true);
 
+    const songFolders = [
+        {
+            img: "https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea",
+            name: "Album",
+            folder: "Playlist . Faizan",
+        },
+        {
+            img: "https://i1.sndcdn.com/artworks-y6qitUuZoS6y8LQo-5s2pPA-t500x500.jpg",
+            name: "Favorites",
+            folder: "Playlist . Faizan",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67616d0000b273bf1744a2fefe51f199ff3874",
+            name: "Dino James",
+            folder: "Artist",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67706c0000da8454b133282efaec2a07cc05fc",
+            name: "Eminem",
+            folder: "Artist",
+        },
+        {
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQhuIypUWqkXHFxXn0jcZHps-lP6qzUkhAGA&usqp=CAU",
+            name: "Relaxation",
+            folder: "Playlist . Faizan",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
+            name: "Weekend",
+            folder: "Artist",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67616d00001e02ba071b7b2ffb03ccb472425d",
+            name: "Arjit Singh",
+            folder: "Artist",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67616d0000b273fac61ec6ab51254a1a4ee6b1",
+            name: "Soundtrack",
+            folder: "Playlist . Spotify",
+        },
+    ];
+
     const goToHome = () => {
         navigate("/spotify-clone");
         setIsActive(true);
@@ -67,96 +110,15 @@ const Sidebar = () => {
                     <FormatListBulletedIcon className="list-icon" />
                 </div>
                 <div className="bottom-body">
-                    <div className="bb-element">
-                        <img
-                            src="https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea"
-                            alt=""
-                        />
-                        <div className="pl-name">
-                            <h3>Album</h3>
-                            <p>
-                                Playlist <b>.</b> Faizan
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bottom-body">
+                    {songFolders.map((folder) => (
                         <div className="bb-element">
-                            <img
-                                src="https://i1.sndcdn.com/artworks-y6qitUuZoS6y8LQo-5s2pPA-t500x500.jpg"
-                                alt=""
-                            />
+                            <img src={folder.img} alt="" />
                             <div className="pl-name">
-                                <h3>Favorites</h3>
-                                <p>
-                                    Playlist <b>.</b> Faizan
-                                </p>
+                                <h3>{folder.name}</h3>
+                                <p>{folder.folder}</p>
                             </div>
                         </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://i.scdn.co/image/ab67616d0000b273bf1744a2fefe51f199ff3874"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Dino James</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://i.scdn.co/image/ab67706c0000da8454b133282efaec2a07cc05fc"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Eminem</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQhuIypUWqkXHFxXn0jcZHps-lP6qzUkhAGA&usqp=CAU"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Relaxation</h3>
-                                <p>
-                                    Playlist <b>.</b> Faizan
-                                </p>
-                            </div>
-                        </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Weekend</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://i.scdn.co/image/ab67616d00001e02ba071b7b2ffb03ccb472425d"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Arjit Singh</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div className="bb-element">
-                            <img
-                                src="https://i.scdn.co/image/ab67616d0000b273fac61ec6ab51254a1a4ee6b1"
-                                alt=""
-                            />
-                            <div className="pl-name">
-                                <h3>Soundtrack</h3>
-                                <p>
-                                    Playlist <b>.</b> Spotify
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
