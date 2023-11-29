@@ -31,6 +31,34 @@ const Home = () => {
         },
     ];
 
+    const div2Elements = [
+        {
+            img: "https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en",
+            name: "Release Radar",
+            folder: "Playlist",
+        },
+        {
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU",
+            name: "Girl in Red",
+            folder: "Artist",
+        },
+        {
+            img: "https://i.scdn.co/image/ab67706f00000002c30623cd54c7a127429e4678",
+            name: "Hip Hop Mix",
+            folder: "Drive slow homie. cover: Big Tymers<",
+        },
+        {
+            img: "https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en",
+            name: "Release Radar",
+            folder: "Playlist",
+        },
+        {
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU",
+            name: "Girl in Red",
+            folder: "Artist",
+        },
+    ];
+
     return (
         <div className="home-div">
             <Navbar />
@@ -40,10 +68,10 @@ const Home = () => {
                     <h2>Good morning</h2>
                 </div>
                 <div className="song-elements">
-                    {div1Elements.map((image) => (
+                    {div1Elements.map((ele) => (
                         <div className="song-ele">
-                            <img src={image.img} alt={image.name} />
-                            <h4>{image.name}</h4>
+                            <img src={ele.img} alt={ele.name} />
+                            <h4>{ele.name}</h4>
                         </div>
                     ))}
                 </div>
@@ -55,48 +83,17 @@ const Home = () => {
                     <h4>Show all</h4>
                 </div>
                 <div className="elements">
-                    <div className="ele">
-                        <img
-                            src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en"
-                            alt=""
-                        />
-                        <h3>Release Radar</h3>
-                        <h4>Playlist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
-                            alt=""
-                            className="img"
-                        />
-                        <h3>Girl in Red</h3>
-                        <h4>Artist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://i.scdn.co/image/ab67706f00000002c30623cd54c7a127429e4678"
-                            alt=""
-                        />
-                        <h3>Hip Hop Mix</h3>
-                        <h4>Drive slow homie. cover: Big Tymers</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en"
-                            alt=""
-                        />
-                        <h3>Release Radar</h3>
-                        <h4>Playlist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
-                            alt=""
-                            className="img"
-                        />
-                        <h3>Girl in Red</h3>
-                        <h4>Artist</h4>
-                    </div>
+                    {div2Elements.map((ele) => (
+                        <div className="ele">
+                            <img
+                                src={ele.img}
+                                alt={ele.name}
+                                className={ele.folder === "Artist" ? "img" : ""}
+                            />
+                            <h3>{ele.name}</h3>
+                            <h4>{ele.folder}</h4>
+                        </div>
+                    ))}
                 </div>
             </div>
 
@@ -106,48 +103,17 @@ const Home = () => {
                     <h4>Show all</h4>
                 </div>
                 <div className="elements">
-                    <div className="ele">
-                        <img
-                            src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en"
-                            alt=""
-                        />
-                        <h3>Release Radar</h3>
-                        <h4>Playlist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
-                            alt=""
-                            className="img"
-                        />
-                        <h3>Girl in Red</h3>
-                        <h4>Artist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://i.scdn.co/image/ab67706f00000002c30623cd54c7a127429e4678"
-                            alt=""
-                        />
-                        <h3>Hip Hop Mix</h3>
-                        <h4>Drive slow homie. cover: Big Tymers</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb3bcef85e105dfc42399ef0ba/en"
-                            alt=""
-                        />
-                        <h3>Release Radar</h3>
-                        <h4>Playlist</h4>
-                    </div>
-                    <div className="ele">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_P5OdvcnoSeVpmv0wNCGV3CSbOaj3h7HNp8NVdZ9t2b9pBhi6OrP-ilzHSmOhTUPBls&usqp=CAU"
-                            alt=""
-                            className="img"
-                        />
-                        <h3>Girl in Red</h3>
-                        <h4>Artist</h4>
-                    </div>
+                    {div2Elements.map((ele) => (
+                        <div className="ele">
+                            <img
+                                src={ele.img}
+                                alt={ele.name}
+                                className={ele.folder === "Artist" ? "img" : ""}
+                            />
+                            <h3>{ele.name}</h3>
+                            <h4>{ele.folder}</h4>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
