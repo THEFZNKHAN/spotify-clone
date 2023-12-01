@@ -112,12 +112,16 @@
 
 .sidebar-div .middle .lib-keyword span {
     font-size: 14px;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(35, 35, 35);
     color: white;
     margin-right: 10px;
     padding: 6px 10px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.sidebar-div .middle .lib-keyword span:hover {
+    background-color: rgb(42, 42, 42);
 }
 
 .sidebar-div .bottom {
