@@ -136,13 +136,33 @@
 .sidebar-div .bottom .bottom-head .list-icon {
     font-size: 1.2rem;
     padding: 5px;
+    cursor: pointer;
 }
 
-.sidebar-div .bottom .bottom-head .search-icon:hover,
-.sidebar-div .bottom .bottom-head .list-icon:hover {
+.sidebar-div .bottom .bottom-head .search-icon:hover {
     color: white;
     background-color: rgb(39, 39, 39);
     border-radius: 50%;
+}
+
+.sidebar-div .bottom .bottom-head .recents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-div .bottom .bottom-head .recents span {
+    font-size: 0.85rem;
+}
+
+.sidebar-div .bottom .bottom-head .recents:hover {
+    color: white;
+}
+
+.sidebar-div .bottom .bottom-head .recents:hover {
+    color: white;
+    font-size: 1.2rem;
 }
 
 .sidebar-div .bottom .bottom-body {

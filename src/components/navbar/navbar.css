@@ -51,6 +51,7 @@
     font-weight: 500;
     background-color: white;
     color: rgb(22 24 29);
+    height: 20px;
     padding: 5px 10px;
     border-radius: 15px;
     cursor: pointer;
@@ -58,9 +59,9 @@
 
 .navbar-div .rightSide .ep-btn:hover {
     font-size: 1.02rem;
-    transition: 0.1s;
     margin-left: 0;
-    font-weight: 520;
+    font-weight: 530;
+    transition: 0.1s;
 }
 
 .navbar-div .rightSide .download-btn {
@@ -69,6 +70,7 @@
     align-items: center;
     background-color: rgb(18, 18, 18);
     color: white;
+    height: 2rem;
     padding: 1px 10px;
     padding-right: 20px;
     border-radius: 20px;
