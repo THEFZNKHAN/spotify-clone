@@ -106,8 +106,13 @@ const Sidebar = () => {
 
             <div className="bottom">
                 <div className="bottom-head">
-                    <SearchIcon className="search-icon" />
-                    <FormatListBulletedIcon className="list-icon" />
+                    <div className="search">
+                        <SearchIcon className="search-icon" />
+                    </div>
+                    <div className="recents">
+                        <span>Recents</span>
+                        <FormatListBulletedIcon className="list-icon" />
+                    </div>
                 </div>
                 <div className="bottom-body">
                     {songFolders.map((folder) => (
