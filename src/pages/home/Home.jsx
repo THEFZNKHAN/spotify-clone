@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./home.css";
 import Navbar from "../../components/navbar/Navbar";
+import "./home.css";
 
 const Home = () => {
     const div1Elements = [
