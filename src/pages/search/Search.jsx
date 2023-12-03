@@ -23,6 +23,11 @@ const Search = () => {
             name: "Marvel's Wastelanders",
             folder: "Marvel & SiriusXM",
         },
+        {
+            img: "https://i.scdn.co/image/ab6765630000ba8a0e695af6fdf3f35efe2cc4fd",
+            name: "Marvel's Wastelanders",
+            folder: "Marvel & SiriusXM",
+        },
     ];
 
     return (
