@@ -30,6 +30,8 @@ const Search = () => {
         },
     ];
 
+    const browseAll = [{ img: "", name: "" }];
+
     return (
         <div className="search-div">
             <Navbar />
@@ -45,6 +47,18 @@ const Search = () => {
                             />
                             <h3>{ele.name}</h3>
                             <h4>{ele.folder}</h4>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="div2">
+                <h2>Browse all</h2>
+                <div className="b-elements">
+                    {browseAll.map((ele) => (
+                        <div className="ele">
+                            <img src={ele.img} alt={ele.name} />
+                            <h3>{ele.name}</h3>
                         </div>
                     ))}
                 </div>
