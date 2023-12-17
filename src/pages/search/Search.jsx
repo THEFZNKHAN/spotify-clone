@@ -30,7 +30,27 @@ const Search = () => {
         },
     ];
 
-    const browseAll = [{ img: "", name: "" }];
+    const browseAll = [
+        { img: "", name: "Music" },
+        { img: "", name: "Podcasts" },
+        { img: "", name: "Charts" },
+        { img: "", name: "New Releases" },
+        { img: "", name: "Discover" },
+        { img: "", name: "Concerts" },
+        { img: "", name: "2021 Wrapped" },
+        { img: "", name: "Videos" },
+        { img: "", name: "Made For You" },
+        { img: "", name: "At Home" },
+        { img: "", name: "Genres and Moods" },
+        { img: "", name: "New Releases" },
+        { img: "", name: "Discover" },
+        { img: "", name: "Concerts" },
+        { img: "", name: "2021 Wrapped" },
+        { img: "", name: "Videos" },
+        { img: "", name: "Made For You" },
+        { img: "", name: "At Home" },
+        { img: "", name: "Genres and Moods" },
+    ];
 
     return (
         <div className="search-div">
