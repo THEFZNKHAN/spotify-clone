@@ -13,13 +13,39 @@
     margin-left: 20px;
 }
 
-.search-div .recent-div h2,
+.search-div .recent-div {
+    margin-top: 15px;
+}
+
+.search-div .recent-div .heading h2,
 .search-div .div2 h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 10px;
+}
+
+.search-div .recent-div .heading h2:hover {
+    text-decoration: underline;
+}
+
+.search-div .recent-div .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-div .recent-div .heading h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+}
+
+.search-div .recent-div .heading h4:hover {
+    text-decoration: underline;
 }
 
 .search-div .recent-div .r-elements {

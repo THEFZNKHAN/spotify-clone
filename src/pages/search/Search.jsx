@@ -56,7 +56,10 @@ const Search = () => {
         <div className="search-div">
             <Navbar />
             <div className="recent-div">
-                <h2>Recent searches</h2>
+                <div className="heading">
+                    <h2>Recent searches</h2>
+                    <h4>Show all</h4>
+                </div>
                 <div className="r-elements">
                     {recentSearches.map((ele) => (
                         <div className="ele">
