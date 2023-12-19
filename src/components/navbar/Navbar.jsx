@@ -32,7 +32,8 @@ const Navbar = () => {
             </div>
 
             <div className="rightSide">
-                {location.pathname === "/spotify-clone" && (
+                {(location.pathname === "/spotify-clone" ||
+                    location.pathname === "/spotify-clone/") && (
                     <span className="ep-btn">Explore Premium</span>
                 )}
                 <div className="download-btn">
