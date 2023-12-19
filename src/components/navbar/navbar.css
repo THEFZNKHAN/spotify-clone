@@ -38,6 +38,43 @@
     color: rgb(18, 18, 18);
 }
 
+.navbar-div .search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    padding: 8px;
+    border-radius: 30px;
+    height: 28px;
+    width: 350px;
+}
+
+.navbar-div .search:hover {
+    background-color: rgb(42, 42, 42);
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.navbar-div .search input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    margin-left: 4px;
+}
+
+.navbar-div .search svg {
+    fill: white;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.navbar-div .search input[type="text"]::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-size: 13px;
+    font-weight: 200;
+}
+
 .navbar-div .rightSide {
     display: flex;
     align-items: center;
