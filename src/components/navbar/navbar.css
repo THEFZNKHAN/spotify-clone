@@ -48,11 +48,6 @@
     width: 350px;
 }
 
-.navbar-div .search:focus-within {
-    border: 2px solid white;
-    outline: none;
-}
-
 .navbar-div .search:hover {
     background-color: rgb(42, 42, 42);
     border: 1px solid rgb(91, 91, 91);
@@ -78,6 +73,11 @@
     opacity: 0.7;
     font-size: 13px;
     font-weight: 200;
+}
+
+.navbar-div .search:focus-within {
+    border: 2px solid white;
+    outline: none;
 }
 
 .navbar-div .rightSide {
