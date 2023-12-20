@@ -75,6 +75,11 @@
     font-weight: 200;
 }
 
+.navbar-div .search:focus-within {
+    border: 2px solid white;
+    outline: none;
+}
+
 .navbar-div .rightSide {
     display: flex;
     align-items: center;
@@ -95,10 +100,9 @@
 }
 
 .navbar-div .rightSide .ep-btn:hover {
-    font-size: 1.02rem;
-    margin-left: 0;
+    font-size: 1.05rem;
     font-weight: 530;
-    transition: 0.1s;
+    transition: ease-in-out 0.2s;
 }
 
 .navbar-div .rightSide .download-btn {
