@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
 
 const Home = () => {
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("http://localhost:5000");
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        };
+        fetchData();
+    }, []);
+
     const div1Elements = [
         {
             img: "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb99e4fca7c0b7cb166d915789/1/en/default",
